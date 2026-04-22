@@ -29,7 +29,7 @@ fi
 cd "$HEDEF_KLASOR" || exit 1
 
 # Magisk'in Busybox'ını tam yoluyla çağırarak riski sıfırlıyoruz
-/data/adb/magisk/busybox tar -czf "$CIKTI_YOLU" .
+busybox tar -czf "$CIKTI_YOLU" .
 
 if [ ! -f "$CIKTI_YOLU" ]; then
     exit 1
